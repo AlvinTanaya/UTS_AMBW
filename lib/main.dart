@@ -130,15 +130,17 @@ class HomePage extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: TextField(
-                    style: TextStyle(color: Colors.black),
-                    decoration: InputDecoration(
-                      hintText: 'Search...',
-                      hintStyle: TextStyle(color: Colors.grey),
-                      border: InputBorder.none,
-                      contentPadding:
-                          EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-                      prefixIcon: Icon(Icons.search, color: Colors.grey),
+                  child: Container(
+                    height: 40,
+                    child: TextField(
+                      style: TextStyle(color: Colors.black),
+                      decoration: InputDecoration(
+                        hintText: 'Search...',
+                        hintStyle: TextStyle(color: Colors.grey),
+                        border: InputBorder.none,
+                        contentPadding: EdgeInsets.only(top: 3),
+                        prefixIcon: Icon(Icons.search, color: Colors.grey),
+                      ),
                     ),
                   ),
                 ),
@@ -303,7 +305,7 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 12.5),
               child: SizedBox(
-                height: 212,
+                height: 203,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
