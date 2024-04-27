@@ -123,29 +123,20 @@ class HomePage extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey, width: 1),
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Container(
-                    height: 40,
-                    child: TextField(
-                      style: TextStyle(color: Colors.black),
-                      decoration: InputDecoration(
-                        hintText: 'Search...',
-                        hintStyle: TextStyle(color: Colors.grey),
-                        border: InputBorder.none,
-                        contentPadding: EdgeInsets.only(top: 3),
-                        prefixIcon: Icon(Icons.search, color: Colors.grey),
-                      ),
-                    ),
+                child: TextField(
+                  style: TextStyle(color: Colors.black),
+                  decoration: InputDecoration(
+                    hintText: 'Search...',
+                    hintStyle: TextStyle(color: Colors.grey),
+                    border: InputBorder.none,
+                    prefixIcon: Icon(Icons.search, color: Colors.grey),
                   ),
                 ),
               ),
             ),
+
             SizedBox(height: 20),
             //THAI STYLE
             Stack(
@@ -155,7 +146,7 @@ class HomePage extends StatelessWidget {
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: NetworkImage(
-                        'https://recipes.net/wp-content/uploads/2023/05/spicy-thai-noodle-soup-recipe_9695cec873938bd99c81ac7f80f05653.jpeg',
+                        'https://cdn.tasteatlas.com//Images/Dishes/e0335282a16644079d6de02902a8b4e9.jpg?w=905&h=510',
                       ),
                       fit: BoxFit.cover,
                     ),
@@ -305,7 +296,7 @@ class HomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 12.5),
               child: SizedBox(
-                height: 203,
+                height: 212,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
